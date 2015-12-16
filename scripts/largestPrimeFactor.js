@@ -3,8 +3,11 @@ var isPrime = function(num)
     var f1 = 1;
     var f2 = num;
     var factors = [];
-    var result = true;
 
+    if (num % 2 === 0)
+    {
+        return false;
+    }
     if (num > 1)
     {
         for (var i = 1; (i < f2); i++)
@@ -17,13 +20,12 @@ var isPrime = function(num)
                 factors.push(f2);
                 if (factors.length > 2)
                 {
-                    result = false;
-                    break;
+                    return false;
                 }
             }
         }
     }
-    return result;
+    return true;
 }
 
 function largestPrimeFactor()
@@ -36,9 +38,10 @@ function largestPrimeFactor()
 
     for (var i = 1; i < factor2; i++)
     {
-        console.log("-------------------------------");
+
         if((number % i) === 0)
         {
+            console.log("-------------------------------");
             factor1 = i;
             factor2 = number / i;
             console.log("factor1 = " + factor1);
