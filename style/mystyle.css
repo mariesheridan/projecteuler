@@ -18,12 +18,11 @@ body {
     height: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
 }
 
 .centered {
-    width: 50%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -48,12 +47,20 @@ h1 {
     color: #6b4e3d;
 }
 
+a h1:hover {
+    color: #31241c;
+}
+
 h2 {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 1em;
     font-weight: bold;
     color: #666;
     margin: 5px 0;
+}
+
+a h2:hover{
+    color: #333333;
 }
 
 .questions {
@@ -66,4 +73,33 @@ h2 {
 }
 .questions div {
     margin-bottom: 10px;
+}
+
+.buttons, .ansLabels, .finalAnswer {
+    margin-top: 10px;
+    float: left;
+    padding: 5px;
+}
+
+.ansLabels, .finalAnswer  {
+    border: 2px solid white;
+}
+
+.finalAnswer  {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #6b4e3d;
+}
+
+.buttons {
+    border-radius: 2px;
+    border: 2px solid #6b4e3d;
+    color: #666;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    color: #333333;
+    border-color: #31241c;
+    background-color: #ece4df;
 }

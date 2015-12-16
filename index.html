@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style/reset.css">
     <link rel="stylesheet" type="text/css" href="style/mystyle.css">
     <title>Project Euler Solution</title>
+    <script src="scripts/multiplesOf3And5.js"></script>
 </head>
 <body>
     <div class="items">
@@ -24,11 +25,17 @@
                 Find the sum of all the multiples of 3 or 5 below 
             </div>
             <div class="oneSentence">
-                <form class="inputs"><input type="text" name="input1" value="1000">
+                <form class="inputs" id="input1"><input type="number" name="inputNum1" value="1000">
             </div>
             <div class="oneSentence">
                 . 
             </div>
+            <div class="dummy"></div>
+        </div>
+        <div class="answers">
+            <a class="buttons" onclick="multiplesOf3And5()">Compute</a>
+            <div class="ansLabels">Answer:</div>
+            <div class="finalAnswer" id="answer1"></div>
             <div class="dummy"></div>
         </div>
         <div class="dummy"></div>
@@ -52,7 +59,7 @@
                 By considering the terms in the Fibonacci sequence whose values do not exceed 
             </div>
             <div class="oneSentence">
-                <form class="inputs"><input type="text" name="input2" value="4000000"></form>
+                <form class="inputs"><input type="number" name="input2" value="4000000"></form>
             </div>
             <div class="oneSentence">
                 , find the sum of the even-valued terms.
@@ -77,7 +84,7 @@
                 What is the largest prime factor of the number
             </div>
             <div class="oneSentence">
-                <form class="inputs"><input type="text" name="input3" value="600851475143"></form>
+                <form class="inputs"><input type="number" name="input3" value="600851475143"></form>
             </div>
             <div class="oneSentence">
                 ?
