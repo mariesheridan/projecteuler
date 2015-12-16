@@ -1,4 +1,10 @@
-function multiplesOf3And5(){
+/**
+ * Gets the multiples of 3 or 5 below a specified maximum value
+ * then adds those multiples.
+ */
+
+function multiplesOf3And5()
+{
     var input = document.getElementById("input1");
     var max = input.elements[0].value;
     var output = 0;
